@@ -46,7 +46,7 @@
 
     .group-form .icon.servo {
         top: -9px;
-        background: url(servo.jpg);
+        background: url(https://raw.githubusercontent.com/jeffersonchaves/automation-page/main/servo.jpg);
         background-size: 100% auto;
     }
 
