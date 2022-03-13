@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Titillium+Web:wght@400;600;700&display=swap');
+
+    body {
+        height: 100vh;
+        background: rgb(77,88,211);
+        background: linear-gradient(180deg, rgba(77,88,211,1) 0%, rgba(80,105,250,1) 50%, rgba(236,117,240,1) 100%);
+    }
+    .title {
+        margin-top: 20px;
+        padding: 35px 20px;
+        color: #fff;
+    }
+
+    .title h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 800;
+    }
+
+    .title span {
+        font-family: serif;
+        font-style: italic;
+    }
+
+    .astronaut {
+        float: right;
+    }
+
+    /* FORM */
+
+    form {
+        margin-top: 50px;
+    }
+    .group-form {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .group-form .icon {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .group-form .icon.servo {
+        top: -9px;
+        background: url(servo.jpg);
+        background-size: 100% auto;
+    }
+
+    .group-form .icon.abajur {
+        top: -9px;
+        background: #fff url(abajur.png) no-repeat center;
+        background-size: 80% auto;
+    }
+
+    .group-form .input-block {
+        margin-left: 150px;
+    }
+
+    .group-form input, .group-form select {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+
+    .group-form select {
+        height: 54px;
+    }
+
+    /* SWITCH */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+      
+      .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+    
